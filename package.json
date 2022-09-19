@@ -1,0 +1,39 @@
+{
+  "name": "custom-search-data-react-typescript",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": "https://github.com/rodrigocunhaf/custom-search-data-react-typescript.git",
+  "author": "Rodrigo Cunha França <rodrigocunhaf@github.com>",
+  "license": "MIT",
+  "source": "./public/index.html",
+  "scripts": {
+    "dev": " yarn eslint:verify && parcel --port 3000 --open",
+    "eslint:verify": "eslint ."
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@parcel/transformer-typescript-tsc": "^2.7.0",
+    "@types/lodash": "^4.14.185",
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.8",
+    "parcel": "^2.7.0",
+    "prettier": "2.7.1",
+    "process": "^0.11.10",
+    "typescript": "^4.8.3"
+  }
+}
