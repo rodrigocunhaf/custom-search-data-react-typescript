@@ -60,7 +60,7 @@ const SearchBox = ({ content }: SearchBoxProps): JSX.Element => {
       <SearchInput
         onChangeHandler={onChangeInputState}
         value={statesFinded}
-        placeholder="City Name"
+        placeholder="State Name"
       />
       <SearchList>
         {_.map(stateDataList, (state, index) => {
