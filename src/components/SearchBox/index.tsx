@@ -4,6 +4,7 @@ import SearchList from './SearchList';
 import SearchListItem from './SearchListItem';
 import SearchListItemContent from './SearchListItemContent';
 import _ from 'lodash';
+import { keyComponent } from '../../utils/keyComponent';
 
 interface StatesI {
   name: string;
@@ -62,9 +63,12 @@ const SearchBox = ({ content }: SearchBoxProps): JSX.Element => {
         placeholder="City Name"
       />
       <SearchList>
-        {_.map(stateDataList, (state) => {
+        {_.map(stateDataList, (state, index) => {
           return (
-            <SearchListItem isVisible={state.isVisible}>
+            <SearchListItem
+              key={keyComponent('search-box', index)}
+              isVisible={state.isVisible}
+            >
               <SearchListItemContent isVisible={state.isVisible}>
                 {state.name} - {state.initials}
               </SearchListItemContent>
