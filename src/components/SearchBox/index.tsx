@@ -23,7 +23,7 @@ type DataStatesList = Array<StatesI & VisibleStateI>;
 
 const createDataList = (dataStates: StatesI[]): DataStatesList => {
   const dataStateList: DataStatesList = _.map(dataStates, (state) => {
-    return { ...state, isVisible: false };
+    return { ...state, isVisible: true };
   });
   return dataStateList;
 };
